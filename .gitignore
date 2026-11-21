@@ -1,0 +1,7 @@
+# Secrets never go in git. Put them in .env locally, or GitHub Secrets.
+.env
+.env.*
+!.env.example
+node_modules/
+.DS_Store
+.render-tmp/

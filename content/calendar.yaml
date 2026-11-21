@@ -1,0 +1,693 @@
+# RentiGoo Instagram calendar: 30 days, 23 Nov - 22 Dec 2026, 5 posts a week.
+# Dates and times are IST. Text markup on slides: **marker highlight**, {{TODO: ...}} placeholder.
+# Anything containing TODO is never published (except in `notes` and `shots`, which are only for you).
+# Honesty rules: only facts true on rentigoo.in today. No made-up reviews, customers, prices or stats.
+# Right now RentiGoo has very few live listings, so renter posts end with "WhatsApp us, we'll try to find it"
+# and half the posts invite owners to list for free.
+
+settings:
+  whatsapp: "+91 93014 22919"
+  website: "rentigoo.in"
+
+posts:
+
+# ───────────────────────── Week 1 · 23-29 Nov · wedding season ─────────────────────────
+
+- id: 2026-11-23-reel-camera-wedding
+  date: 2026-11-23
+  time: "19:30"
+  type: reel
+  pillar: rent-dont-buy
+  hook: "Don't buy an ₹85,000 camera for one wedding."
+  shots:
+    - { n: 1, seconds: 2, film: "Close-up: your hand pushing a camera box / camera across a table towards the lens. Text on screen from frame 1.", on_screen: "Don't buy an ₹85,000 camera for one wedding" }
+    - { n: 2, seconds: 3, film: "You (or just your hands) counting: 1 wedding, 1 sangeet, then the camera goes in the almirah. Show an almirah door closing.", on_screen: "1 shaadi. Phir almirah mein 2 saal." }
+    - { n: 3, seconds: 4, film: "Screen recording on your phone: rentigoo.in → Browse → Cameras.", on_screen: "Rent it from someone in Bhopal instead" }
+    - { n: 4, seconds: 4, film: "Screen recording: open a camera listing, scroll past price/day and the refundable deposit.", on_screen: "Price per day + refundable deposit, shown upfront" }
+    - { n: 5, seconds: 3, film: "Hands holding the camera, then a thumbs-up or a quick shutter click sound.", on_screen: "Not listed? WhatsApp us. We'll try to find it." }
+  audio: "Trending upbeat wedding/dhol track from the Reels audio browser (look for the ↗ trending arrow) under a short voiceover. If you publish through the API, the video's own sound is used, so mix the music into the file."
+  cover:
+    kicker: "Shaadi season, Bhopal"
+    title: "Don't **buy** an ₹85,000 camera for one wedding"
+    sub: "Rent it for the days you need it."
+  caption: |
+    Ek shaadi ke liye ₹85,000 ka camera? 😅 Shaadi ke baad woh almirah mein hi rehta hai.
+
+    RentiGoo pe Bhopal ke logon se camera rent karo, sirf utne din ke liye jitna chahiye. Price per day aur refundable deposit pehle se dikhta hai, aur abhi booking fee bhi nahi hai.
+
+    Jo chahiye woh listed nahi hai? WhatsApp karo +91 93014 22919, hum dhoondhne ki koshish karenge.
+
+    👉 Save karo next shaadi ke liye, aur us dost ko share karo jo har function mein photographer ban jaata hai.
+    🌐 rentigoo.in
+  hashtags: [Bhopal, RentInBhopal, BhopalWeddings, CameraOnRent, BhopalEvents, MPNagar, RentDontBuy, WeddingSeason, BhopalPhotographers, IndianWedding]
+  notes: "The ₹85,000 figure is your example hook from the brief. On posting day, check the camera listing you show is still live."
+
+- id: 2026-11-24-carousel-wedding-checklist
+  date: 2026-11-24
+  time: "20:00"
+  type: carousel
+  pillar: useful
+  slides:
+    - kind: hook
+      kicker: "Shaadi season checklist"
+      title: "Things you can **rent** for a wedding, not buy"
+      sub: "Save this before the next function in the family."
+    - kind: checklist
+      title: "For the photos"
+      items: ["Camera, for the day itself", "Extra lens (portrait or wide)", "Tripod for group photos", "Ring light or LED light"]
+    - kind: checklist
+      title: "For the sangeet"
+      items: ["Party speaker with a mic", "Fairy lights and backdrop frame", "Extension boards (never enough!)"]
+    - kind: checklist
+      title: "For the guests"
+      items: ["Folding chairs and tables", "Room heater for winter evenings", "Air purifier for the hall or home"]
+    - kind: step
+      title: "Why rent?"
+      text: |
+        You use most of these for 2-3 days. Renting from someone in Bhopal means you pay for those days, and the deposit comes back after.
+
+        Owners on RentiGoo set the price per day and a refundable deposit, shown before you ask.
+    - kind: cta
+      title: "Save this, and share it with the family group"
+      lines: ["Save it for the next shaadi", "Share with whoever is doing the planning", "Not listed yet? WhatsApp +91 93014 22919", "rentigoo.in"]
+  caption: |
+    Ghar mein shaadi hai? Yeh sab kharidne ki zaroorat nahi 🙌
+
+    Camera, speaker, lights, chairs, heater... 2-3 din ke kaam ke liye Bhopal mein kisi se rent karo. Price per day aur refundable deposit pehle se dikhta hai.
+
+    Kuch listed nahi hai? WhatsApp karo +91 93014 22919, hum Bhopal mein kisi ke paas se dhoondhne ki koshish karenge.
+
+    📌 Save karo, aur family group mein share karo!
+  hashtags: [BhopalWeddings, Bhopal, RentInBhopal, WeddingChecklist, BhopalEvents, ShaadiSeason, RentDontBuy, MPNagar, WeddingPlanning, BhopalDiaries]
+
+- id: 2026-11-26-carousel-how-it-works
+  date: 2026-11-26
+  time: "19:30"
+  type: carousel
+  pillar: how-it-works
+  slides:
+    - kind: hook
+      kicker: "New here?"
+      title: "How renting on RentiGoo **works**"
+      sub: "5 steps. No booking fee right now."
+    - kind: step
+      number: 1
+      title: "Find it"
+      text: "Search rentigoo.in by what you need, your area and your dates. Every listing shows the price per day and the refundable deposit."
+    - kind: step
+      number: 2
+      title: "Send a request"
+      text: "Pick your dates and send a request. It costs nothing. You can message the owner first."
+    - kind: step
+      number: 3
+      title: "Owner says yes"
+      text: "The dates are blocked for you. You still haven't paid anything."
+    - kind: step
+      number: 4
+      title: "Pickup or delivery"
+      text: "Collect it, or get it delivered for the owner's delivery fee. Show your ID, photograph the item together, then pay rent and deposit to the owner by UPI or cash."
+    - kind: step
+      number: 5
+      title: "Return it"
+      text: "Photograph it again at return. The owner gives the deposit back within 24 hours, unless damage is reported with photos."
+    - kind: cta
+      title: "Save this for your first rental"
+      lines: ["Save it", "Share with a friend who always borrows your stuff", "Questions? WhatsApp +91 93014 22919", "rentigoo.in"]
+  caption: |
+    RentiGoo kaise kaam karta hai? Simple hai 👇
+
+    1. Dhoondho 2. Request bhejo (free) 3. Owner haan bole 4. Pickup ya delivery, photos lo, rent + deposit owner ko do 5. Wapas karo, deposit 24 ghante mein wapas.
+
+    Abhi koi booking fee nahi hai, aur listing bhi free hai.
+
+    Sawaal? WhatsApp karo +91 93014 22919 💬
+    📌 Save karo first rental ke liye.
+  hashtags: [RentInBhopal, Bhopal, HowItWorks, RentDontBuy, BhopalStartup, MPNagar, BhopalStudents, SharingEconomy, BhopalDiaries]
+
+- id: 2026-11-27-reel-party-speaker
+  date: 2026-11-27
+  time: "20:30"
+  type: reel
+  pillar: rent-dont-buy
+  hook: "Party this weekend? Rent the speaker, not buy it."
+  shots:
+    - { n: 1, seconds: 2, film: "Your phone showing a WhatsApp party plan (blur names), quick zoom in. Text from frame 1.", on_screen: "Party this weekend?" }
+    - { n: 2, seconds: 3, film: "A shopping app cart with a big speaker (blur the brand), thumb hovering over Buy.", on_screen: "Rent the speaker, not buy it" }
+    - { n: 3, seconds: 3, film: "Thumb moves away. Cut to you shaking your head / closing the app.", on_screen: "1 raat ki party = 1-2 din ka rent" }
+    - { n: 4, seconds: 4, film: "Screen recording: rentigoo.in → Browse → Party & events.", on_screen: "Rent from someone in Bhopal" }
+    - { n: 5, seconds: 3, film: "Lights on in a room, music starts. End on the RentiGoo logo or website.", on_screen: "Not listed? WhatsApp us, we'll try to find one" }
+  audio: "A trending party/beat-drop sound: the drop lands on shot 5 when the lights come on."
+  cover:
+    kicker: "Weekend plans"
+    title: "Rent the **speaker**, not buy it"
+    sub: "Party this weekend? 🎉"
+  caption: |
+    Weekend party ke liye naya speaker? 🔊 Ek raat ke liye itna kharcha kyun?
+
+    RentiGoo pe Bhopal ke logon se party gear rent karo. Speaker abhi listed nahi dikh raha? WhatsApp karo +91 93014 22919, hum kisi ke paas se dhoondhne ki koshish karenge.
+
+    Aur agar aapke ghar pe speaker pada hai, toh list karo, free hai, aur rent kamao. 💸
+
+    🔁 Share karo us dost ko jo har party host karta hai!
+  hashtags: [Bhopal, RentInBhopal, BhopalParty, PartyRentals, BhopalEvents, WeekendVibes, RentDontBuy, BhopalNightlife, MPNagar, BhopalStudents]
+
+- id: 2026-11-29-single-item-of-week-nikon
+  date: 2026-11-29
+  time: "19:00"
+  type: single
+  pillar: local
+  slides:
+    - kind: photo
+      image: listings/nikon-1.webp
+      title: "Item of the week: **Nikon camera**"
+      chips: ["₹500/day", "MP Nagar", "Delivery ₹100", "Deposit ₹750"]
+      text: "From an owner in MP Nagar. Rent it for 1 to 15 days."
+  caption: |
+    📸 Item of the week: Nikon Camera, MP Nagar
+
+    ₹500 per day, 1 se 15 din ke liye. Pickup MP Nagar se, ya ₹100 mein delivery. Refundable deposit ₹750.
+
+    Shaadi, trip ya YouTube shoot, jo bhi plan ho 🙌
+    Book karo rentigoo.in pe, ya WhatsApp karo +91 93014 22919.
+
+    Aapke paas bhi kuch hai jo rent pe de sakte ho? List karna free hai.
+  hashtags: [Bhopal, MPNagar, CameraOnRent, RentInBhopal, NikonIndia, BhopalPhotography, ItemOfTheWeek, BhopalWeddings, RentDontBuy]
+  notes: "Real listing (rentigoo.in/listing/8e4646db-db55-4ffb-bede-d3ab5003f36c). Before posting: check it's still live, the price is unchanged, and the owner is happy to be featured."
+
+# ───────────────────────── Week 2 · 30 Nov - 6 Dec · owners + deposits ─────────────────────────
+
+- id: 2026-11-30-reel-earn-from-cupboard
+  date: 2026-11-30
+  time: "19:30"
+  type: reel
+  pillar: owners
+  hook: "That camera in your almirah could be paying for itself."
+  shots:
+    - { n: 1, seconds: 2, film: "Open an almirah/cupboard door: a camera, speaker or drill on the shelf. Text from frame 1.", on_screen: "Your almirah is full of money 👀" }
+    - { n: 2, seconds: 3, film: "Pick the item up, blow dust off it (fun, quick).", on_screen: "Used it once. Since then: nothing." }
+    - { n: 3, seconds: 4, film: "Phone: take 2-3 photos of the item by a window (daylight).", on_screen: "List it on RentiGoo: free" }
+    - { n: 4, seconds: 4, film: "Screen recording: rentigoo.in/list, the steps (photos, price, deposit).", on_screen: "You set the price and the deposit" }
+    - { n: 5, seconds: 3, film: "Hand-over moment: give the item to a friend (hands only), they hand back cash/UPI on a phone screen.", on_screen: "No commission right now" }
+  audio: "A trending 'glow-up'/before-after sound: the beat changes on shot 3."
+  cover:
+    kicker: "For owners"
+    title: "Your almirah is full of **money**"
+    sub: "List what you don't use. Free."
+  caption: |
+    Ghar mein camera, speaker, drill, tent... saal mein ek baar use hota hai? 🤔
+
+    RentiGoo pe list karo, bilkul free. Price aur deposit aap set karo, request aap accept karo, aur rent seedha aapko milta hai. Abhi koi commission nahi.
+
+    Kitna kama sakte ho? Estimate dekho rentigoo.in/earn pe.
+
+    📌 Save karo, aur us dost ko bhejo jiske ghar mein sab kuch hai!
+  hashtags: [Bhopal, EarnFromHome, RentInBhopal, SideIncome, BhopalStudents, MPNagar, RentDontBuy, BhopalBusiness, Declutter, SharingEconomy]
+
+- id: 2026-12-01-carousel-deposit-rules
+  date: 2026-12-01
+  time: "20:00"
+  type: carousel
+  pillar: trust
+  slides:
+    - kind: hook
+      kicker: "Deposits, explained"
+      title: "Will I get my **deposit** back?"
+      sub: "How deposits work on RentiGoo."
+    - kind: step
+      title: "There's a limit"
+      text: |
+        An owner can ask for at most **30%** of what the item cost new, and never more than the limit for that kind of item.
+
+        Items that cost more than ₹5,000 need the original bill, which only RentiGoo sees.
+    - kind: step
+      title: "Photos at pickup and return"
+      text: "Owner and renter both photograph the item when it's handed over and when it comes back. Those dated photos are the condition record."
+    - kind: dark
+      kicker: "The rule"
+      title: "Back within **24 hours**"
+      text: "If it comes back as it left, the owner returns the full deposit within 24 hours of the return."
+    - kind: step
+      title: "If something is damaged"
+      text: "The owner must report it to RentiGoo within 24 hours, with photos, and can keep only the reasonable repair cost. RentiGoo decides any dispute from the photos."
+    - kind: cta
+      title: "Save this for your next rental"
+      lines: ["Save it", "Share with a friend who worries about deposits", "Questions? WhatsApp +91 93014 22919", "Full rules: rentigoo.in/refunds"]
+  caption: |
+    "Deposit wapas milega ya nahi?" 🤔 Sabse common sawaal. Jawaab yeh raha 👇
+
+    ✅ Deposit ki limit hai: item ki nayi keemat ka max 30%
+    ✅ Pickup aur return pe dono taraf se photos
+    ✅ Sab theek hai toh deposit 24 ghante mein wapas
+    ✅ Damage ho toh 24 ghante mein photos ke saath report, aur sirf repair ka reasonable kharcha
+
+    Sawaal? WhatsApp karo +91 93014 22919 💬
+    📌 Save karo, aur share karo us dost ko jo deposit se darta hai.
+  hashtags: [RentInBhopal, Bhopal, DepositRules, RentDontBuy, BhopalStudents, MPNagar, SafeRenting, BhopalDiaries, TrustAndSafety]
+
+- id: 2026-12-03-carousel-rent-vs-buy-maths
+  date: 2026-12-03
+  time: "19:30"
+  type: carousel
+  pillar: rent-dont-buy
+  slides:
+    - kind: hook
+      kicker: "Rent vs buy"
+      title: "Do the **maths** before you buy"
+      sub: "A 30-second check that can save you thousands."
+    - kind: step
+      title: "Buying really costs"
+      text: |
+        **Price − what you'd sell it for later + upkeep**
+
+        A camera you sell in 2 years for half its price still cost you the other half, plus batteries, servicing and storage.
+    - kind: step
+      title: "Renting costs"
+      text: |
+        **Days you'll use it × price per day**
+
+        The deposit comes back, so it isn't a cost.
+    - kind: compare
+      title: "Example: a camera for 3 days"
+      rows:
+        - { label: "Buying", amount: "{{TODO: price − resale}}", note: "{{TODO: real new and resale price}}" }
+        - { label: "Renting on RentiGoo", amount: "₹1,500", note: "3 days × ₹500/day (the Nikon in MP Nagar)", win: true }
+    - kind: step
+      title: "Try it with your numbers"
+      text: "Our free calculator does it for you: rentigoo.in/rent-or-buy. It's an estimate, so check the real prices."
+    - kind: cta
+      title: "Save this before your next big buy"
+      lines: ["Save it", "Share with the friend who buys everything", "WhatsApp +91 93014 22919", "rentigoo.in/rent-or-buy"]
+  caption: |
+    Kharidne se pehle 30 second ka hisaab 🧮
+
+    Kharidna = price − baad mein bechne pe kitna milega + maintenance
+    Rent = kitne din × price per day (deposit wapas aata hai)
+
+    Apne numbers daal ke dekho: rentigoo.in/rent-or-buy (free calculator, estimate).
+
+    📌 Save karo, aur share karo us dost ko jo sab kuch kharid leta hai!
+  hashtags: [RentVsBuy, Bhopal, RentInBhopal, MoneyTips, SaveMoney, BhopalStudents, RentDontBuy, PersonalFinanceIndia, MPNagar]
+  notes: "Fill the buying example with a real new price and a real resale price for a similar Nikon (e.g. from a shop or OLX) before this can publish."
+
+- id: 2026-12-04-reel-how-it-works-20s
+  date: 2026-12-04
+  time: "20:30"
+  type: reel
+  pillar: how-it-works
+  hook: "Renting in Bhopal, in 20 seconds."
+  shots:
+    - { n: 1, seconds: 2, film: "Phone in hand, rentigoo.in home page loading. Text from frame 1.", on_screen: "Renting in Bhopal, in 20 seconds ⏱️" }
+    - { n: 2, seconds: 4, film: "Screen recording: search, pick dates on a listing.", on_screen: "1. Find it, pick dates" }
+    - { n: 3, seconds: 4, film: "Screen recording: tap Request to book.", on_screen: "2. Request: free" }
+    - { n: 4, seconds: 5, film: "Hands: photographing an item on a table from 2-3 angles.", on_screen: "3. Pickup: ID + photos, pay the owner" }
+    - { n: 5, seconds: 5, film: "Hands handing the item back; phone shows a UPI 'received' screen (blur amount and names).", on_screen: "4. Return: deposit back in 24 hrs" }
+  audio: "A trending fast 'tutorial'/tick-tock sound that fits 20 seconds of quick cuts."
+  cover:
+    kicker: "How it works"
+    title: "Renting in Bhopal, in **20 seconds**"
+  caption: |
+    Rent karna itna easy hai 👇
+
+    Dhoondho → request bhejo (free) → pickup pe ID + photos → owner ko rent + deposit → wapas karo, deposit 24 ghante mein wapas.
+
+    Abhi booking fee bhi nahi hai. Try karo: rentigoo.in
+    Sawaal? WhatsApp +91 93014 22919
+
+    🔁 Share karo us dost ko jo har cheez kharid leta hai!
+  hashtags: [RentInBhopal, Bhopal, HowItWorks, BhopalStartup, RentDontBuy, MPNagar, BhopalStudents, LifeHacks, SharingEconomy]
+
+- id: 2026-12-06-single-founder-story
+  date: 2026-12-06
+  time: "19:00"
+  type: single
+  pillar: local
+  slides:
+    - kind: photo
+      image_todo: "TODO: your photo (square, real, no filters)"
+      title: "Hi, I'm **Ayush**. I started RentiGoo in Bhopal."
+      text: "{{TODO: 2 lines in your own words: why you started RentiGoo}}"
+  caption: |
+    {{TODO: your story in your own words, 4-6 lines, in Hinglish. Why you started RentiGoo, why Bhopal, what you want it to be.}}
+
+    Kuch rent karna hai ya list karna hai? WhatsApp karo +91 93014 22919, main khud reply karta hoon.
+    🌐 rentigoo.in
+  hashtags: [Bhopal, BhopalStartup, FounderStory, RentInBhopal, StartupIndia, MadeInBhopal, MPNagar, BhopalBusiness, RentDontBuy]
+  notes: "Needs your real photo in assets/ (set image:) and your own words. Blocked until then."
+
+# ───────────────────────── Week 3 · 7-13 Dec · students + owners ─────────────────────────
+
+- id: 2026-12-07-reel-student-fridge-monthly
+  date: 2026-12-07
+  time: "19:30"
+  type: reel
+  pillar: students
+  hook: "New in Bhopal for college? Don't buy a fridge for 10 months."
+  shots:
+    - { n: 1, seconds: 2, film: "Empty PG/hostel room corner. Text from frame 1.", on_screen: "New in Bhopal for college?" }
+    - { n: 2, seconds: 3, film: "You pointing at the empty spaces: corner, table, wall.", on_screen: "Fridge. Study table. Cooler. Heater." }
+    - { n: 3, seconds: 3, film: "Shake your head, cross arms.", on_screen: "Don't buy them for 10 months" }
+    - { n: 4, seconds: 4, film: "Screen recording: a listing with 'By the month' selected.", on_screen: "Rent by the month, 1 to 12 months" }
+    - { n: 5, seconds: 3, film: "Point to camera.", on_screen: "Not listed? WhatsApp us. We'll try." }
+  audio: "A trending 'room tour'/new-beginning sound."
+  cover:
+    kicker: "Students in Bhopal"
+    title: "Don't buy a fridge for **10 months**"
+    sub: "Rent it by the month."
+  caption: |
+    College ke liye Bhopal aaye ho? 🎒 PG mein fridge, table, cooler, heater... sab kharidoge toh semester khatam hote hote bechna padega.
+
+    RentiGoo pe kuch cheezein month ke hisaab se bhi rent hoti hain (1 se 12 mahine). Har mahine ka rent us mahine ki shuruaat mein.
+
+    Jo chahiye listed nahi hai? WhatsApp karo +91 93014 22919, hum dhoondhne ki koshish karenge.
+
+    🔁 Share karo apne PG group mein!
+  hashtags: [BhopalStudents, Bhopal, PGLife, RentInBhopal, MANITBhopal, CollegeLife, StudentLife, MPNagar, RentDontBuy, HostelLife]
+  notes: "Monthly rental is a real feature, but owners choose whether to offer it. Don't promise a specific item."
+
+- id: 2026-12-08-carousel-fest-prep
+  date: 2026-12-08
+  time: "20:00"
+  type: carousel
+  pillar: students
+  slides:
+    - kind: hook
+      kicker: "Fest committee?"
+      title: "Rent the **fest gear**. Don't blow the budget."
+    - kind: checklist
+      title: "Stage and sound"
+      items: ["Party speakers with mics", "LED and fairy lights", "Extension boards and long wires"]
+    - kind: checklist
+      title: "Screen and photos"
+      items: ["Projector and screen for the movie night", "Camera and tripod for the event photos", "Ring light for the reels team"]
+    - kind: checklist
+      title: "Stalls and seating"
+      items: ["Folding tables for stalls", "Folding chairs", "Cooler / heater depending on the weather"]
+    - kind: step
+      title: "How to do it"
+      text: |
+        Send the list to us on WhatsApp with your dates and college. We'll try to find owners in Bhopal who have it.
+
+        Each owner sets their own price and a refundable deposit, shown before you book.
+    - kind: cta
+      title: "Send this to your fest team"
+      lines: ["Save it", "Share in the committee group", "WhatsApp the list: +91 93014 22919", "rentigoo.in"]
+  caption: |
+    College fest aa raha hai aur budget chhota hai? 🎤
+
+    Speaker, lights, projector, camera, tables... sab rent pe lo, 2-3 din ke liye. List bhejo WhatsApp pe (+91 93014 22919) dates aur college ke saath, hum Bhopal mein owners dhoondhne ki koshish karenge.
+
+    📌 Save karo, aur committee group mein share karo!
+  hashtags: [BhopalStudents, Bhopal, CollegeFest, RentInBhopal, BhopalEvents, FestSeason, MANITBhopal, EventRentals, RentDontBuy, StudentLife]
+
+- id: 2026-12-10-carousel-list-in-5-minutes
+  date: 2026-12-10
+  time: "19:30"
+  type: carousel
+  pillar: owners
+  slides:
+    - kind: hook
+      kicker: "For owners"
+      title: "List your stuff in **5 minutes**"
+      sub: "Free. No commission right now."
+    - kind: step
+      number: 1
+      title: "Photos"
+      text: "Take 3-4 clear photos in daylight. Your phone is enough."
+    - kind: step
+      number: 2
+      title: "Price and deposit"
+      text: "Set a price per day (and per month, if you like). Add a refundable deposit up to the standard limit: 30% of what it cost new."
+    - kind: step
+      number: 3
+      title: "Pickup or delivery"
+      text: "Choose pickup from your area, delivery for a fee you set, or both. Block any days you need it yourself."
+    - kind: step
+      number: 4
+      title: "Say yes to requests"
+      text: "Nobody can book without your yes. At pickup, check the renter's ID and photograph the item together."
+    - kind: cta
+      title: "List one thing today"
+      lines: ["Save this", "Share with a friend who has a camera, speaker or tent", "Help listing? WhatsApp +91 93014 22919", "rentigoo.in/list"]
+  caption: |
+    Ghar pe pada saamaan = side income 💸
+
+    5 minute mein list karo: photos → price + deposit → pickup ya delivery → requests accept karo. Free hai, aur abhi koi commission nahi.
+
+    Listing mein help chahiye? WhatsApp karo +91 93014 22919, hum help karenge.
+    👉 rentigoo.in/list
+  hashtags: [Bhopal, SideIncome, RentInBhopal, EarnFromHome, BhopalBusiness, MPNagar, BhopalStudents, Declutter, RentDontBuy]
+
+- id: 2026-12-11-reel-drill-once
+  date: 2026-12-11
+  time: "20:30"
+  type: reel
+  pillar: owners
+  hook: "Bought a drill for one shelf in 2019?"
+  shots:
+    - { n: 1, seconds: 2, film: "A single shelf on a wall. Zoom slowly. Text from frame 1.", on_screen: "Bought a drill for ONE shelf?" }
+    - { n: 2, seconds: 3, film: "Drill/toolbox on top of a cupboard, dusty.", on_screen: "Since then: nothing 🕸️" }
+    - { n: 3, seconds: 3, film: "Take it down, wipe it, plug it in, quick buzz.", on_screen: "Someone in Bhopal needs it this week" }
+    - { n: 4, seconds: 4, film: "Screen recording: listing a tool on rentigoo.in/list.", on_screen: "List it free. You set the price + deposit." }
+    - { n: 5, seconds: 3, film: "Hand-over (hands only).", on_screen: "Earn from it instead" }
+  audio: "A trending comedic sound with a 'record scratch' on shot 2."
+  cover:
+    kicker: "For owners"
+    title: "Bought a drill for **one shelf**?"
+  caption: |
+    Ek shelf lagane ke liye drill li thi... aur phir? 😂
+
+    Bhopal mein kisi ko is hafte wahi drill chahiye. RentiGoo pe list karo, free. Price aur deposit aap decide karo, request aap accept karo.
+
+    👉 rentigoo.in/list | help: WhatsApp +91 93014 22919
+    🔁 Tag karo us dost ko jiske paas poora toolbox hai!
+  hashtags: [Bhopal, RentInBhopal, DIY, SideIncome, ToolsOnRent, BhopalHomes, MPNagar, RentDontBuy, EarnFromHome]
+
+- id: 2026-12-13-single-partner-shop
+  date: 2026-12-13
+  time: "19:00"
+  type: single
+  pillar: local
+  slides:
+    - kind: photo
+      image_todo: "TODO: real photo of the partner shop (with permission)"
+      title: "Meet **{{TODO: shop name}}**, {{TODO: area}}"
+      text: "{{TODO: what they rent, in their words, 1-2 lines}}"
+  caption: |
+    Bhopal ki local rental shops ko support karo 🙌
+
+    {{TODO: 3-4 lines about the partner shop: name, area, what they rent, how to reach them. Only what they've told you.}}
+
+    Aapki bhi rental shop hai? WhatsApp karo +91 93014 22919 ya email support@rentigoo.in, collab karte hain.
+  hashtags: [Bhopal, SupportLocal, BhopalBusiness, RentInBhopal, VocalForLocal, BhopalShops, MPNagar, BhopalEvents, RentDontBuy]
+  notes: "Use growth/outreach.md (partner shop DM) to find the shop first. Get their OK on the photo and the text."
+
+# ───────────────────────── Week 4 · 14-20 Dec · winter trips + parties ─────────────────────────
+
+- id: 2026-12-14-reel-pachmarhi-tent
+  date: 2026-12-14
+  time: "19:30"
+  type: reel
+  pillar: rent-dont-buy
+  hook: "Pachmarhi trip this winter? Don't buy a tent you'll use once."
+  shots:
+    - { n: 1, seconds: 2, film: "Map app zooming from Bhopal to Pachmarhi. Text from frame 1.", on_screen: "Pachmarhi trip this winter? 🏕️" }
+    - { n: 2, seconds: 3, film: "Shopping app: tent + sleeping bags in cart (blur brands).", on_screen: "Tent + sleeping bags + stove..." }
+    - { n: 3, seconds: 3, film: "Swipe the cart away.", on_screen: "Used once a year? Rent them." }
+    - { n: 4, seconds: 4, film: "Screen recording: rentigoo.in → Camping & outdoor.", on_screen: "Camping gear from people in Bhopal" }
+    - { n: 5, seconds: 3, film: "Packing a bag (any outdoor shot you have, or your own trip footage).", on_screen: "Not listed? WhatsApp us, we'll try" }
+  audio: "A trending travel/road-trip sound."
+  cover:
+    kicker: "Winter trips"
+    title: "Don't buy a **tent** you'll use once"
+    sub: "Pachmarhi, Bhimbetka, Satpura..."
+  caption: |
+    Sardiyon mein Pachmarhi ka plan? 🏕️ Tent, sleeping bags, stove sab kharidne ki zaroorat nahi.
+
+    RentiGoo pe Bhopal ke logon se camping gear rent karo. Listed nahi hai? WhatsApp karo +91 93014 22919, hum dhoondhne ki koshish karenge.
+
+    Aur jinke paas camping gear pada hai: list karo, free hai! 💸
+    🔁 Share karo apne trip group mein.
+  hashtags: [Pachmarhi, Bhopal, RentInBhopal, CampingIndia, MadhyaPradeshTourism, WinterTrip, BhopalTravellers, TrekkingIndia, RentDontBuy, MPTourism]
+
+- id: 2026-12-15-carousel-safety
+  date: 2026-12-15
+  time: "20:00"
+  type: carousel
+  pillar: trust
+  slides:
+    - kind: hook
+      kicker: "Renting from a stranger?"
+      title: "How we keep it **safe**"
+    - kind: step
+      title: "ID at pickup"
+      text: "The renter shows the owner a government photo ID at pickup, before anything changes hands."
+    - kind: step
+      title: "Photos, both ways"
+      text: "Owner and renter photograph the item together at pickup and at return. That's the record if there's ever a dispute."
+    - kind: step
+      title: "Deposits with rules"
+      text: "Capped at 30% of the new price, back within 24 hours of a good return. Damage has to be reported within 24 hours, with photos."
+    - kind: step
+      title: "Reviews from both sides"
+      text: "After a rental, renter and owner review each other. Only people who actually rented can review."
+    - kind: dark
+      title: "Something wrong? **Talk to a human.**"
+      text: "WhatsApp or call +91 93014 22919, or email support@rentigoo.in."
+    - kind: cta
+      title: "Save this for your first rental"
+      lines: ["Save it", "Share with someone who's never rented before", "WhatsApp +91 93014 22919", "rentigoo.in/trust-and-safety"]
+  caption: |
+    Kisi anjaan se rent karna safe hai? 🤔 Yeh hai humara system 👇
+
+    🪪 Pickup pe ID
+    📸 Pickup aur return pe photos, dono taraf se
+    💰 Deposit ki limit + 24 ghante mein wapas
+    ⭐ Dono taraf se reviews
+    📞 Problem ho toh insaan se baat karo: +91 93014 22919
+
+    📌 Save karo, aur share karo!
+  hashtags: [RentInBhopal, Bhopal, SafeRenting, TrustAndSafety, BhopalStudents, MPNagar, RentDontBuy, BhopalDiaries, SharingEconomy]
+
+- id: 2026-12-17-carousel-winter-trip-checklist
+  date: 2026-12-17
+  time: "19:30"
+  type: carousel
+  pillar: useful
+  slides:
+    - kind: hook
+      kicker: "Winter weekend trips from Bhopal"
+      title: "The **camping** checklist"
+      sub: "Rent the big stuff. Pack the rest."
+    - kind: checklist
+      title: "Sleep"
+      items: ["Tent (check how many it sleeps)", "Sleeping bags rated for cold nights", "Sleeping mats"]
+    - kind: checklist
+      title: "Cook and carry"
+      items: ["Small camping stove", "60 L rucksack with a rain cover", "Water bottles and a flask"]
+    - kind: checklist
+      title: "Don't forget"
+      items: ["Power bank and torch", "First-aid kit", "Warm layers, a cap and gloves"]
+    - kind: step
+      title: "Rent, don't buy"
+      text: "Tents, sleeping bags, stoves and rucksacks are used a few times a year. Rent them from someone in Bhopal, and the deposit comes back after."
+    - kind: cta
+      title: "Send this to your trip group"
+      lines: ["Save it", "Share with the trip planner", "Need gear? WhatsApp +91 93014 22919", "rentigoo.in/rent/outdoor"]
+  caption: |
+    Winter trip ka plan hai? ❄️ Yeh checklist save kar lo 👇
+
+    Tent, sleeping bags, stove, rucksack: saal mein 2-3 baar use hote hain. Rent karo, deposit wapas lo.
+
+    Gear chahiye? WhatsApp +91 93014 22919, hum dhoondhne ki koshish karenge.
+    📌 Save karo, trip group mein share karo!
+  hashtags: [Bhopal, CampingIndia, WinterTrip, RentInBhopal, Pachmarhi, TrekkingIndia, BhopalTravellers, RentDontBuy, MPTourism, CampingChecklist]
+
+- id: 2026-12-18-reel-projector-movie-night
+  date: 2026-12-18
+  time: "20:30"
+  type: reel
+  pillar: rent-dont-buy
+  hook: "Christmas movie night on a big screen, without buying a projector."
+  shots:
+    - { n: 1, seconds: 2, film: "Friends' feet on a mattress, blankets, lights off. Text from frame 1.", on_screen: "Movie night this Christmas? 🎄" }
+    - { n: 2, seconds: 3, film: "Point at a blank white wall.", on_screen: "This wall = your big screen" }
+    - { n: 3, seconds: 3, film: "Turn on a projector (yours or a friend's), light hits the wall.", on_screen: "Rent the projector for the night" }
+    - { n: 4, seconds: 4, film: "Screen recording: rentigoo.in → Electronics & gaming.", on_screen: "From someone in Bhopal" }
+    - { n: 5, seconds: 3, film: "Popcorn bowl, everyone settles in.", on_screen: "Not listed? WhatsApp us, we'll try" }
+  audio: "A trending cosy Christmas / lo-fi sound."
+  cover:
+    kicker: "Christmas plans"
+    title: "Big-screen **movie night**, no projector to buy"
+  caption: |
+    Christmas pe dost ghar aa rahe hain? 🎄🍿 Deewar ko bana do big screen.
+
+    Projector kharidne ki zaroorat nahi, RentiGoo pe Bhopal mein rent karo. Listed nahi hai? WhatsApp +91 93014 22919, hum dhoondhne ki koshish karenge.
+
+    🔁 Share karo us dost ko jiske ghar pe party hoti hai!
+  hashtags: [Bhopal, ChristmasInBhopal, MovieNight, RentInBhopal, BhopalParty, ProjectorOnRent, BhopalEvents, RentDontBuy, MPNagar, ChristmasVibes]
+
+- id: 2026-12-20-single-giveaway
+  date: 2026-12-20
+  time: "19:00"
+  type: single
+  pillar: local
+  slides:
+    - kind: hook
+      kicker: "Giveaway with {{TODO: partner shop name}}"
+      title: "Win **1 free rental day** in Bhopal"
+      sub: "How to enter: see the caption. Ends {{TODO: end date}}."
+  caption: |
+    🎁 GIVEAWAY: 1 free rental day, with {{TODO: partner shop @handle}}!
+
+    Enter karne ke liye:
+    1. @rentigoo aur {{TODO: partner @handle}} ko follow karo
+    2. Is post ko save karo
+    3. Comment karo: aap kya rent karna chahoge aur kis plan ke liye?
+
+    Rules ki poori list neeche hai 👇 (growth/outreach.md wali giveaway rules paste karo)
+    {{TODO: paste the full rules from growth/outreach.md with the dates filled in}}
+
+    Sawaal? WhatsApp karo +91 93014 22919 | rentigoo.in
+  hashtags: [BhopalGiveaway, Bhopal, Giveaway, RentInBhopal, BhopalEvents, ContestAlert, MPNagar, SupportLocal, BhopalShops]
+  notes: "Needs a confirmed partner shop, their handle, the prize details and the end date. Instagram's promotion rules: the post must say it isn't sponsored by Instagram (it's in the rules template)."
+
+# ───────────────────────── 21-22 Dec · New Year ─────────────────────────
+
+- id: 2026-12-21-reel-deposit-question
+  date: 2026-12-21
+  time: "19:30"
+  type: reel
+  pillar: trust
+  hook: "'Deposit wapas milega?' Here's exactly how it works."
+  shots:
+    - { n: 1, seconds: 2, film: "You looking suspicious at the camera, eyebrow raised. Text from frame 1.", on_screen: "Deposit wapas milega? 🤨" }
+    - { n: 2, seconds: 4, film: "Hands photographing an item at pickup (2 angles).", on_screen: "Pickup: both take photos" }
+    - { n: 3, seconds: 4, film: "Hands photographing it again at return.", on_screen: "Return: photos again" }
+    - { n: 4, seconds: 4, film: "Phone shows a UPI 'received' screen (blur amount and names).", on_screen: "All good? Back within 24 hours" }
+    - { n: 5, seconds: 4, film: "You, relieved, thumbs up.", on_screen: "Damage? Reported in 24 hrs, with photos" }
+  audio: "A trending 'question → answer' sound with a reveal."
+  cover:
+    kicker: "Deposits"
+    title: "Deposit **wapas** milega?"
+    sub: "Here's exactly how it works."
+  caption: |
+    Sabse bada sawaal: "Deposit wapas milega?" 🤨
+
+    Pickup aur return pe dono photos lete hain. Sab theek hai toh owner 24 ghante mein deposit wapas karta hai. Damage hua toh 24 ghante mein photos ke saath report, aur sirf repair ka reasonable kharcha.
+
+    Poore rules: rentigoo.in/refunds
+    📌 Save karo, aur share karo!
+  hashtags: [RentInBhopal, Bhopal, DepositRules, SafeRenting, RentDontBuy, BhopalStudents, MPNagar, BhopalDiaries, TrustAndSafety]
+
+- id: 2026-12-22-carousel-new-year-rent-list
+  date: 2026-12-22
+  time: "20:00"
+  type: carousel
+  pillar: useful
+  slides:
+    - kind: hook
+      kicker: "New Year in Bhopal"
+      title: "Party at home? **Rent** these."
+    - kind: checklist
+      title: "Music and lights"
+      items: ["Party speaker with a mic", "Fairy lights and a backdrop", "Disco / LED lights"]
+    - kind: checklist
+      title: "Screen and games"
+      items: ["Projector for the countdown", "PS5 with an extra controller", "Karaoke mic"]
+    - kind: checklist
+      title: "Comfort"
+      items: ["Extra folding chairs", "Room heater for the terrace", "Extension boards"]
+    - kind: dark
+      title: "Got any of these at home? **List them.**"
+      text: "New Year is when people need them. Listing on RentiGoo is free, and there's no commission right now."
+    - kind: cta
+      title: "Save this for 31st night"
+      lines: ["Save it", "Share in the party group", "Need something? WhatsApp +91 93014 22919", "rentigoo.in"]
+  caption: |
+    31st ki party ghar pe? 🎉 Yeh sab rent pe mil sakta hai: speaker, lights, projector, PS5, heater, chairs.
+
+    Listed nahi hai? WhatsApp +91 93014 22919, hum dhoondhne ki koshish karenge.
+    Aur agar aapke paas inme se kuch hai, toh list karo: free hai, aur New Year pe sabko chahiye! 💸
+
+    📌 Save karo, party group mein share karo.
+  hashtags: [NewYearParty, Bhopal, RentInBhopal, BhopalParty, NYE2027, BhopalEvents, PartyRentals, RentDontBuy, MPNagar, HouseParty]
