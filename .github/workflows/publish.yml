@@ -43,7 +43,7 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           PUBLIC_BASE_URL: ${{ vars.PUBLIC_BASE_URL }}
-          GRAPH_VERSION: ${{ vars.GRAPH_VERSION || 'v25.0' }}
+          GRAPH_VERSION: ${{ vars.GRAPH_VERSION || 'v27.0' }}
           HASHTAG_LIMIT: ${{ vars.HASHTAG_LIMIT || '5' }}
           # Scheduled runs are live only once you set the repository variable PUBLISHING_ENABLED=true.
           DRY_RUN: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) || (github.event_name == 'schedule' && vars.PUBLISHING_ENABLED != 'true') }}

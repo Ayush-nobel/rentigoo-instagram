@@ -45,25 +45,30 @@ gh repo create rentigoo-instagram --public --source . --push
 
 ### 2. Create the Meta developer app
 
-1. Go to <https://developers.facebook.com/apps> → **Create app**.
-2. Name it "RentiGoo Publisher". For the use case, pick the one for managing a Page or Instagram (if asked, choose app type **Business**).
-3. In the app, add the **Instagram** product and choose **API setup with Facebook login**.
-4. Leave the app in **Development** mode. You're its admin and you own the Instagram account, so it works on your own account without App Review.
+Meta's dashboard changes often; these steps match it as of November 2026.
+
+1. Go to <https://developers.facebook.com/apps> → **Create app**, name it "RentiGoo Publisher", and connect it to your business portfolio if asked.
+2. In the app, open **Use cases** (left menu) → **Add use case** → the Instagram one (**"Manage messaging & content on Instagram"**) → **Customize**.
+3. Choose **API setup with Facebook login** (not "Instagram login": an app can only have one, and this system uses the Facebook one, whose Page token never expires).
+4. Add these permissions: `instagram_basic`, `instagram_content_publish`, `instagram_manage_insights`, `pages_show_list`, `pages_read_engagement`, `business_management`.
+5. Leave the app in **Development** mode. You're its admin and you own the Instagram account, so it works on your own account without App Review.
+
+**If the Graph API Explorer only shows ads and Pages permissions** (no `instagram_…` ones), the Instagram use case from step 2 hasn't been added yet.
 
 ### 3. Get a token that doesn't expire
 
 Do this on your own computer. Never paste a token into chat, a file in this repo, or a commit.
 
-1. Open the **Graph API Explorer**: <https://developers.facebook.com/tools/explorer/>. Select your app, then **User Token**, and add these permissions:
+1. Open the **Graph API Explorer**: <https://developers.facebook.com/tools/explorer/>. Pick your app under **Meta App**, set **User or Page** to **User Token**, and in **Add a Permission** tick:
    `instagram_basic`, `instagram_content_publish`, `instagram_manage_insights`, `pages_show_list`, `pages_read_engagement`, `business_management`.
    Click **Generate Access Token** and approve for your Page and Instagram account. This token lasts about an hour.
 2. Swap it for a **long-lived user token** (60 days). Your App ID and App Secret are in the app's **Settings → Basic**:
    ```bash
-   curl -s "https://graph.facebook.com/v25.0/oauth/access_token?grant_type=fb_exchange_token&client_id=APP_ID&client_secret=APP_SECRET&fb_exchange_token=SHORT_TOKEN"
+   curl -s "https://graph.facebook.com/v27.0/oauth/access_token?grant_type=fb_exchange_token&client_id=APP_ID&client_secret=APP_SECRET&fb_exchange_token=SHORT_TOKEN"
    ```
 3. Use that to get your **Page token**. A Page token made from a long-lived user token **doesn't expire**:
    ```bash
-   curl -s "https://graph.facebook.com/v25.0/me/accounts?fields=id,name,access_token&access_token=LONG_LIVED_USER_TOKEN"
+   curl -s "https://graph.facebook.com/v27.0/me/accounts?fields=id,name,access_token&access_token=LONG_LIVED_USER_TOKEN"
    ```
    Copy the `access_token` and `id` of the RentiGoo Page.
 4. Check it in the **Access Token Debugger** (<https://developers.facebook.com/tools/debug/accesstoken/>): **Expires: Never**.
@@ -73,7 +78,7 @@ It stops working if you change your Facebook password or remove the app's permis
 ### 4. Find your Instagram user ID
 
 ```bash
-curl -s "https://graph.facebook.com/v25.0/PAGE_ID?fields=instagram_business_account&access_token=PAGE_TOKEN"
+curl -s "https://graph.facebook.com/v27.0/PAGE_ID?fields=instagram_business_account&access_token=PAGE_TOKEN"
 ```
 The `instagram_business_account.id` (a long number starting `1784…`) is your **IG_USER_ID**.
 
@@ -88,7 +93,7 @@ gh variable set PUBLIC_BASE_URL --body "https://<your-github-username>.github.io
 gh variable set PUBLISHING_ENABLED --body "false"   # stays false until you're ready (step 8)
 ```
 
-Optional variables: `GRAPH_VERSION` (default `v25.0`) and `HASHTAG_LIMIT` (default `5`, see below).
+Optional variables: `GRAPH_VERSION` (default `v27.0`) and `HASHTAG_LIMIT` (default `5`, see below).
 
 For running on your computer, copy `.env.example` to `.env` and fill in the same values. `.env` is in `.gitignore`, so it's never committed.
 

@@ -3,7 +3,7 @@
  * used only for our own account: publishing our own media and reading our own
  * insights. Nothing here follows, likes, comments, messages or reads other accounts.
  */
-const VERSION = () => process.env.GRAPH_VERSION || 'v25.0'
+const VERSION = () => process.env.GRAPH_VERSION || 'v27.0'
 const BASE = () => `https://graph.facebook.com/${VERSION()}`
 
 export class GraphError extends Error {
