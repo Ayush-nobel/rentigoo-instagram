@@ -63,7 +63,7 @@ Only promise what's true: you'll *try* to find owners. Nothing is guaranteed unt
 > 🎁 GIVEAWAY: 1 free rental day, with {{partner @handle}}!
 >
 > Jeetne ke liye:
-> 1. @rentigoo aur {{partner @handle}} dono ko follow karo
+> 1. @rentigoo_ aur {{partner @handle}} dono ko follow karo
 > 2. Is post ko save karo
 > 3. Comment karo: aap kya rent karna chahoge, aur kis plan ke liye? (ek comment kaafi hai)
 >
@@ -72,8 +72,8 @@ Only promise what's true: you'll *try* to find owners. Nothing is guaranteed unt
 ### Rules (paste in the caption, under the post text)
 
 1. Open to people aged 18 and over living in Bhopal. Entries close {{date, time}} IST.
-2. To enter: follow @rentigoo and {{partner @handle}}, save this post, and comment once. Extra comments don't add entries. No purchase or payment needed.
-3. One winner, picked at random from valid entries on {{date}} and announced in our stories. We'll DM the winner from @rentigoo only. We never ask for money, OTPs or passwords.
+2. To enter: follow @rentigoo_ and {{partner @handle}}, save this post, and comment once. Extra comments don't add entries. No purchase or payment needed.
+3. One winner, picked at random from valid entries on {{date}} and announced in our stories. We'll DM the winner from @rentigoo_ only. We never ask for money, OTPs or passwords.
 4. Prize: one rental day of {{item}} from {{partner shop}}, worth {{₹ value}}, to be used by {{date}}. Not exchangeable for cash. Normal rental terms apply, including showing ID and the refundable deposit at pickup.
 5. If the winner doesn't reply within 48 hours, we pick another winner.
 6. This giveaway is not sponsored, endorsed or administered by, or associated with, Instagram or Meta.

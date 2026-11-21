@@ -1,6 +1,6 @@
 # RentiGoo Instagram growth system
 
-A free system for growing [@rentigoo](https://instagram.com/rentigoo) in Bhopal:
+A free system for growing [@rentigoo_](https://instagram.com/rentigoo_) in Bhopal:
 
 - **`content/calendar.yaml`**: 30 days of posts (23 Nov to 22 Dec 2026). 5 a week: 2 reels, 2 carousels and 1 local post, at 7-9 pm IST, with Hinglish captions and hashtags.
 - **Designs**: `npm run generate` turns the calendar into 1080x1350 brand PNGs and 1080x1920 reel covers in `output/`, shot lists in `reels/`, and **`output/previews.html`** to review everything.
