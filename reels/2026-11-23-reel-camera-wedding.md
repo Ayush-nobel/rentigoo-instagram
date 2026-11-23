@@ -11,7 +11,7 @@ Put the on-screen text up from the very first frame. Start mid-action, no intro.
 | # | Sec | What to film | On-screen text |
 |---|-----|--------------|----------------|
 | 1 | 2 | Close-up: your hand pushing a camera box / camera across a table towards the lens. Text on screen from frame 1. | Don't buy an ₹85,000 camera for one wedding |
-| 2 | 3 | You (or just your hands) counting: 1 wedding, 1 sangeet, then the camera goes in the almirah. Show an almirah door closing. | 1 shaadi. Phir almirah mein 2 saal. |
+| 2 | 3 | You (or just your hands) counting: 1 wedding, 1 sangeet, then the camera goes in the cupboard. Show a cupboard door closing. | Used once. Then two years in the cupboard. |
 | 3 | 4 | Screen recording on your phone: rentigoo.in → Browse → Cameras. | Rent it from someone in Bhopal instead |
 | 4 | 4 | Screen recording: open a camera listing, scroll past price/day and the refundable deposit. | Price per day + refundable deposit, shown upfront |
 | 5 | 3 | Hands holding the camera, then a thumbs-up or a quick shutter click sound. | Not listed? WhatsApp us. We'll try to find it. |
@@ -23,13 +23,13 @@ Trending upbeat wedding/dhol track from the Reels audio browser (look for the �
 
 ## Caption
 ```
-Ek shaadi ke liye ₹85,000 ka camera? 😅 Shaadi ke baad woh almirah mein hi rehta hai.
+An ₹85,000 camera for one wedding? 😅 After the wedding it just sits in the cupboard.
 
-RentiGoo pe Bhopal ke logon se camera rent karo, sirf utne din ke liye jitna chahiye. Price per day aur refundable deposit pehle se dikhta hai, aur abhi booking fee bhi nahi hai.
+Rent a camera from people in Bhopal on RentiGoo, only for the days you need it. The price per day and the refundable deposit are shown upfront, and there's no booking fee right now.
 
-Jo chahiye woh listed nahi hai? WhatsApp karo +91 93014 22919, hum dhoondhne ki koshish karenge.
+Can't find what you need? WhatsApp us on +91 93014 22919 and we'll try to find it.
 
-👉 Save karo next shaadi ke liye, aur us dost ko share karo jo har function mein photographer ban jaata hai.
+👉 Save this for the next wedding, and share it with the friend who becomes the photographer at every function.
 🌐 rentigoo.in
 
 #Bhopal #RentInBhopal #BhopalWeddings #CameraOnRent #BhopalEvents
