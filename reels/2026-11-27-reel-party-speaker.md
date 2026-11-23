@@ -12,7 +12,7 @@ Put the on-screen text up from the very first frame. Start mid-action, no intro.
 |---|-----|--------------|----------------|
 | 1 | 2 | Your phone showing a WhatsApp party plan (blur names), quick zoom in. Text from frame 1. | Party this weekend? |
 | 2 | 3 | A shopping app cart with a big speaker (blur the brand), thumb hovering over Buy. | Rent the speaker, not buy it |
-| 3 | 3 | Thumb moves away. Cut to you shaking your head / closing the app. | 1 raat ki party = 1-2 din ka rent |
+| 3 | 3 | Thumb moves away. Cut to you shaking your head / closing the app. | 1 night of party = 1-2 days of rent |
 | 4 | 4 | Screen recording: rentigoo.in → Browse → Party & events. | Rent from someone in Bhopal |
 | 5 | 3 | Lights on in a room, music starts. End on the RentiGoo logo or website. | Not listed? WhatsApp us, we'll try to find one |
 
@@ -23,13 +23,13 @@ A trending party/beat-drop sound: the drop lands on shot 5 when the lights come 
 
 ## Caption
 ```
-Weekend party ke liye naya speaker? 🔊 Ek raat ke liye itna kharcha kyun?
+A new speaker for a weekend party? 🔊 Why spend that much on one night?
 
-RentiGoo pe Bhopal ke logon se party gear rent karo. Speaker abhi listed nahi dikh raha? WhatsApp karo +91 93014 22919, hum kisi ke paas se dhoondhne ki koshish karenge.
+Rent party gear from people in Bhopal on RentiGoo. Can't see a speaker listed yet? WhatsApp us on +91 93014 22919 and we'll try to find someone who has one.
 
-Aur agar aapke ghar pe speaker pada hai, toh list karo, free hai, aur rent kamao. 💸
+And if there's a speaker sitting at home, list it. It's free, and you earn rent. 💸
 
-🔁 Share karo us dost ko jo har party host karta hai!
+🔁 Share this with the friend who hosts every party!
 
 #Bhopal #RentInBhopal #BhopalParty #PartyRentals #BhopalEvents
 ```

@@ -2,7 +2,7 @@
 
 A free system for growing [@rentigoo_](https://instagram.com/rentigoo_) in Bhopal:
 
-- **`content/calendar.yaml`**: 30 days of posts (23 Nov to 22 Dec 2026). 5 a week: 2 reels, 2 carousels and 1 local post, at 7-9 pm IST, with Hinglish captions and hashtags.
+- **`content/calendar.yaml`**: 30 days of posts (23 Nov to 22 Dec 2026). 5 a week: 2 reels, 2 carousels and 1 local post, at 7-9 pm IST, with English captions and hashtags.
 - **Designs**: `npm run generate` turns the calendar into 1080x1350 brand PNGs and 1080x1920 reel covers in `output/`, shot lists in `reels/`, and **`output/previews.html`** to review everything.
 - **Auto-publisher**: `scripts/publish.mjs` posts what's due through the **official Instagram Graph API**. GitHub Actions runs it every evening.
 - **Weekly report**: `scripts/report.mjs` reads your own insights every Monday and writes `reports/<week>.md`.

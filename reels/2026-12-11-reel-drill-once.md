@@ -23,12 +23,12 @@ A trending comedic sound with a 'record scratch' on shot 2.
 
 ## Caption
 ```
-Ek shelf lagane ke liye drill li thi... aur phir? 😂
+Bought a drill to put up one shelf... and then? 😂
 
-Bhopal mein kisi ko is hafte wahi drill chahiye. RentiGoo pe list karo, free. Price aur deposit aap decide karo, request aap accept karo.
+Someone in Bhopal needs that drill this week. List it on RentiGoo for free. You decide the price and the deposit, and you accept the requests.
 
 👉 rentigoo.in/list | help: WhatsApp +91 93014 22919
-🔁 Tag karo us dost ko jiske paas poora toolbox hai!
+🔁 Tag the friend who owns a whole toolbox!
 
 #Bhopal #RentInBhopal #DIY #SideIncome #ToolsOnRent
 ```

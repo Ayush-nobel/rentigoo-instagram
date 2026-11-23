@@ -23,13 +23,13 @@ A trending 'room tour'/new-beginning sound.
 
 ## Caption
 ```
-College ke liye Bhopal aaye ho? 🎒 PG mein fridge, table, cooler, heater... sab kharidoge toh semester khatam hote hote bechna padega.
+New in Bhopal for college? 🎒 Fridge, table, cooler, heater for the PG... buy them all and you'll be selling them again by the end of the semester.
 
-RentiGoo pe kuch cheezein month ke hisaab se bhi rent hoti hain (1 se 12 mahine). Har mahine ka rent us mahine ki shuruaat mein.
+Some things on RentiGoo can also be rented by the month (1 to 12 months), with each month's rent paid at the start of that month.
 
-Jo chahiye listed nahi hai? WhatsApp karo +91 93014 22919, hum dhoondhne ki koshish karenge.
+Not listed? WhatsApp us on +91 93014 22919 and we'll try to find it.
 
-🔁 Share karo apne PG group mein!
+🔁 Share this in your PG group!
 
 #BhopalStudents #Bhopal #PGLife #RentInBhopal #MANITBhopal
 ```

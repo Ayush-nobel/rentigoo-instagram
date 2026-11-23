@@ -23,14 +23,14 @@ A trending fast 'tutorial'/tick-tock sound that fits 20 seconds of quick cuts.
 
 ## Caption
 ```
-Rent karna itna easy hai 👇
+Renting is this easy 👇
 
-Dhoondho → request bhejo (free) → pickup pe ID + photos → owner ko rent + deposit → wapas karo, deposit 24 ghante mein wapas.
+Find it → send a request (free) → ID + photos at pickup → pay the rent + deposit to the owner → return it, and the deposit is back within 24 hours.
 
-Abhi booking fee bhi nahi hai. Try karo: rentigoo.in
-Sawaal? WhatsApp +91 93014 22919
+There's no booking fee right now. Try it: rentigoo.in
+Questions? WhatsApp +91 93014 22919
 
-🔁 Share karo us dost ko jo har cheez kharid leta hai!
+🔁 Share this with the friend who buys everything!
 
 #RentInBhopal #Bhopal #HowItWorks #BhopalStartup #RentDontBuy
 ```

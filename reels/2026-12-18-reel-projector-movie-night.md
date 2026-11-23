@@ -23,11 +23,11 @@ A trending cosy Christmas / lo-fi sound.
 
 ## Caption
 ```
-Christmas pe dost ghar aa rahe hain? 🎄🍿 Deewar ko bana do big screen.
+Friends coming over for Christmas? 🎄🍿 Turn a wall into a big screen.
 
-Projector kharidne ki zaroorat nahi, RentiGoo pe Bhopal mein rent karo. Listed nahi hai? WhatsApp +91 93014 22919, hum dhoondhne ki koshish karenge.
+No need to buy a projector: rent one in Bhopal on RentiGoo. Not listed? WhatsApp +91 93014 22919 and we'll try to find one.
 
-🔁 Share karo us dost ko jiske ghar pe party hoti hai!
+🔁 Share this with the friend whose house hosts every party!
 
 #Bhopal #ChristmasInBhopal #MovieNight #RentInBhopal #BhopalParty
 ```

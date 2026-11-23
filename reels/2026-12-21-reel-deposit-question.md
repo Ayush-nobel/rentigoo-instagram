@@ -1,16 +1,16 @@
-# Reel: 'Deposit wapas milega?' Here's exactly how it works.
+# Reel: 'Will I get my deposit back?' Here's exactly how it works.
 
 **Post:** Monday, 21 December at 7:30 pm IST · **Length:** about 18 seconds · **Cover:** `output/2026-12-21-reel-deposit-question/cover.png`
 
 ## Hook (first 2 seconds)
-> 'Deposit wapas milega?' Here's exactly how it works.
+> 'Will I get my deposit back?' Here's exactly how it works.
 
 Put the on-screen text up from the very first frame. Start mid-action, no intro.
 
 ## Shots (film on your phone, vertical, 1080x1920)
 | # | Sec | What to film | On-screen text |
 |---|-----|--------------|----------------|
-| 1 | 2 | You looking suspicious at the camera, eyebrow raised. Text from frame 1. | Deposit wapas milega? 🤨 |
+| 1 | 2 | You looking suspicious at the camera, eyebrow raised. Text from frame 1. | Will I get my deposit back? 🤨 |
 | 2 | 4 | Hands photographing an item at pickup (2 angles). | Pickup: both take photos |
 | 3 | 4 | Hands photographing it again at return. | Return: photos again |
 | 4 | 4 | Phone shows a UPI 'received' screen (blur amount and names). | All good? Back within 24 hours |
@@ -23,12 +23,12 @@ A trending 'question → answer' sound with a reveal.
 
 ## Caption
 ```
-Sabse bada sawaal: "Deposit wapas milega?" 🤨
+The biggest question: "Will I get my deposit back?" 🤨
 
-Pickup aur return pe dono photos lete hain. Sab theek hai toh owner 24 ghante mein deposit wapas karta hai. Damage hua toh 24 ghante mein photos ke saath report, aur sirf repair ka reasonable kharcha.
+Both of you take photos at pickup and return. If everything's fine, the owner returns the deposit within 24 hours. If there's damage, it has to be reported within 24 hours with photos, and only the reasonable repair cost can be kept.
 
-Poore rules: rentigoo.in/refunds
-📌 Save karo, aur share karo!
+Full rules: rentigoo.in/refunds
+📌 Save this, and share it!
 
 #RentInBhopal #Bhopal #DepositRules #SafeRenting #RentDontBuy
 ```

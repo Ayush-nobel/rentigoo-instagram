@@ -23,12 +23,12 @@ A trending travel/road-trip sound.
 
 ## Caption
 ```
-Sardiyon mein Pachmarhi ka plan? 🏕️ Tent, sleeping bags, stove sab kharidne ki zaroorat nahi.
+Planning a winter trip to Pachmarhi? 🏕️ No need to buy a tent, sleeping bags and a stove.
 
-RentiGoo pe Bhopal ke logon se camping gear rent karo. Listed nahi hai? WhatsApp karo +91 93014 22919, hum dhoondhne ki koshish karenge.
+Rent camping gear from people in Bhopal on RentiGoo. Not listed? WhatsApp us on +91 93014 22919 and we'll try to find it.
 
-Aur jinke paas camping gear pada hai: list karo, free hai! 💸
-🔁 Share karo apne trip group mein.
+And if you've got camping gear at home: list it, it's free! 💸
+🔁 Share this in your trip group.
 
 #Pachmarhi #Bhopal #RentInBhopal #CampingIndia #MadhyaPradeshTourism
 ```

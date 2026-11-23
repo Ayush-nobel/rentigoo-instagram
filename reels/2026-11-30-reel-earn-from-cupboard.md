@@ -1,16 +1,16 @@
-# Reel: That camera in your almirah could be paying for itself.
+# Reel: That camera in your cupboard could be paying for itself.
 
 **Post:** Monday, 30 November at 7:30 pm IST · **Length:** about 16 seconds · **Cover:** `output/2026-11-30-reel-earn-from-cupboard/cover.png`
 
 ## Hook (first 2 seconds)
-> That camera in your almirah could be paying for itself.
+> That camera in your cupboard could be paying for itself.
 
 Put the on-screen text up from the very first frame. Start mid-action, no intro.
 
 ## Shots (film on your phone, vertical, 1080x1920)
 | # | Sec | What to film | On-screen text |
 |---|-----|--------------|----------------|
-| 1 | 2 | Open an almirah/cupboard door: a camera, speaker or drill on the shelf. Text from frame 1. | Your almirah is full of money 👀 |
+| 1 | 2 | Open a cupboard door: a camera, speaker or drill on the shelf. Text from frame 1. | Your cupboard is full of money 👀 |
 | 2 | 3 | Pick the item up, blow dust off it (fun, quick). | Used it once. Since then: nothing. |
 | 3 | 4 | Phone: take 2-3 photos of the item by a window (daylight). | List it on RentiGoo: free |
 | 4 | 4 | Screen recording: rentigoo.in/list, the steps (photos, price, deposit). | You set the price and the deposit |
@@ -23,13 +23,13 @@ A trending 'glow-up'/before-after sound: the beat changes on shot 3.
 
 ## Caption
 ```
-Ghar mein camera, speaker, drill, tent... saal mein ek baar use hota hai? 🤔
+Camera, speaker, drill, tent at home... used once a year? 🤔
 
-RentiGoo pe list karo, bilkul free. Price aur deposit aap set karo, request aap accept karo, aur rent seedha aapko milta hai. Abhi koi commission nahi.
+List it on RentiGoo, completely free. You set the price and the deposit, you accept the requests, and the rent comes straight to you. No commission right now.
 
-Kitna kama sakte ho? Estimate dekho rentigoo.in/earn pe.
+How much could you earn? See an estimate at rentigoo.in/earn.
 
-📌 Save karo, aur us dost ko bhejo jiske ghar mein sab kuch hai!
+📌 Save this, and send it to the friend whose house has everything!
 
 #Bhopal #EarnFromHome #RentInBhopal #SideIncome #BhopalStudents
 ```
