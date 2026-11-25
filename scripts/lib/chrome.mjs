@@ -87,12 +87,49 @@ export async function launchChrome() {
     writeFileSync(pngPath, Buffer.from(data, 'base64'))
   }
 
+  /**
+   * Plays an HTML page's CSS animations frame by frame (not in real time, so
+   * every frame is exact) and hands each frame to onFrame as a JPEG buffer.
+   * Animations must not loop forever; use fill-mode both so delayed ones show their start.
+   * stills: [{ at: seconds, path }] PNG snapshots (e.g. the reel cover) taken first.
+   */
+  async function record(htmlPath, { width, height, fps, duration, stills = [] }, onFrame) {
+    await send('Emulation.setDeviceMetricsOverride', { width, height, deviceScaleFactor: 1, mobile: false }, sessionId)
+    const loaded = new Promise((r) => {
+      const l = (m) => {
+        if (m.sessionId === sessionId && m.method === 'Page.loadEventFired') {
+          listeners.delete(l)
+          r()
+        }
+      }
+      listeners.add(l)
+    })
+    await send('Page.navigate', { url: pathToFileURL(htmlPath).href }, sessionId)
+    await loaded
+    await send('Runtime.evaluate', { expression: 'document.fonts.ready.then(() => Promise.all([...document.images].map(i => i.complete ? 0 : new Promise(r => { i.onload = i.onerror = r }))))', awaitPromise: true }, sessionId)
+    const seek = (ms) => send('Runtime.evaluate', { expression: `(() => { for (const a of document.getAnimations()) { a.pause(); a.currentTime = ${ms} } return 0 })()`, returnByValue: true }, sessionId)
+    const grab = async (format) => Buffer.from((await send('Page.captureScreenshot', { format, ...(format === 'jpeg' ? { quality: 94 } : {}), clip: { x: 0, y: 0, width, height, scale: 1 } }, sessionId)).data, 'base64')
+    for (const { at, path } of stills) {
+      await seek(at * 1000)
+      writeFileSync(path, await grab('png'))
+    }
+    const frames = Math.round(duration * fps)
+    for (let i = 0; i < frames; i++) {
+      await seek((i * 1000) / fps)
+      await onFrame(await grab('jpeg'), i, frames)
+    }
+    return { frames }
+  }
+
   async function close() {
     try {
       await send('Browser.close')
     } catch {}
+    // Let Chrome finish writing its profile before deleting it.
+    const exited = proc.exitCode !== null ? Promise.resolve() : new Promise((r) => proc.once('exit', r))
     proc.kill()
-    rmSync(profile, { recursive: true, force: true })
+    await Promise.race([exited, new Promise((r) => setTimeout(r, 5000))])
+    rmSync(profile, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 })
   }
-  return { screenshot, close }
+  return { screenshot, record, close }
 }

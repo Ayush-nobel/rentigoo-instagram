@@ -24,7 +24,9 @@ export function loadCalendar(file = resolve(ROOT, 'content/calendar.yaml')) {
     if (!p.caption) problems.push(`${where}: caption missing`)
     if (p.type === 'carousel' && !(p.slides?.length >= 2 && p.slides.length <= CAROUSEL_MAX)) problems.push(`${where}: a carousel needs 2 to ${CAROUSEL_MAX} slides`)
     if (p.type === 'single' && p.slides?.length !== 1) problems.push(`${where}: a single post needs exactly 1 slide`)
-    if (p.type === 'reel' && !p.cover) problems.push(`${where}: a reel needs a cover`)
+    if (p.type === 'reel' && !p.cover && !p.motion) problems.push(`${where}: a reel needs a cover (or a motion block, which makes its own)`)
+    if (p.motion && p.type !== 'reel') problems.push(`${where}: motion posts are reels (set type: reel)`)
+    if (p.motion && !['hero', 'app', 'scrapbook'].includes(p.motion.style)) problems.push(`${where}: motion.style must be hero, app or scrapbook`)
     const caption = fullCaption(p, Infinity)
     if (caption.length > CAPTION_MAX) problems.push(`${where}: caption is ${caption.length} characters (max ${CAPTION_MAX})`)
   }

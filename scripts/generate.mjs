@@ -3,7 +3,8 @@
  * Turns content/calendar.yaml into:
  *   output/<id>/01.png …    1080x1350 carousel slides and single posts
  *   output/<id>/cover.png   1080x1920 reel covers
- *   reels/<date>-<slug>.md  one-page shot list per reel
+ *   reels/<date>-<slug>.md  one-page shot list per filmed reel
+ *   reels/ready/<id>.mp4    animated reels (posts with a motion: block), via ffmpeg
  *   output/previews.html    everything on one page, to review
  * Usage: node scripts/generate.mjs [--only <id>]
  */
@@ -12,6 +13,7 @@ import { join, relative, resolve } from 'node:path'
 import { launchChrome } from './lib/chrome.mjs'
 import { coverHtml, SIZES, slideHtml } from './lib/templates.mjs'
 import { dueAt, fullCaption, loadCalendar, mediaFiles, ROOT, todosIn } from './lib/calendar.mjs'
+import { renderMotion } from './lib/video.mjs'
 
 const only = process.argv.includes('--only') ? process.argv[process.argv.indexOf('--only') + 1] : null
 const { posts, problems } = loadCalendar()
@@ -30,7 +32,15 @@ try {
     const dir = resolve(ROOT, 'output', p.id)
     rmSync(dir, { recursive: true, force: true })
     mkdirSync(dir, { recursive: true })
-    if (p.type === 'reel') {
+    if (p.type === 'reel' && p.motion) {
+      // Animated reel made here: video + cover, no filming, so no shot list.
+      const files = mediaFiles(p)
+      mkdirSync(resolve(ROOT, 'reels/ready'), { recursive: true })
+      const { duration } = await renderMotion(chrome, p, { tmpDir: tmp, coverPath: resolve(ROOT, files.cover), videoPath: resolve(ROOT, files.video) })
+      rmSync(resolve(ROOT, 'reels', `${p.id}.md`), { force: true })
+      process.stdout.write(`\n  ${p.id}: ${duration}s ${p.motion.style} reel `)
+      count++
+    } else if (p.type === 'reel') {
       const html = join(tmp, `${p.id}-cover.html`)
       writeFileSync(html, coverHtml(p.cover))
       await chrome.screenshot(html, join(dir, 'cover.png'), SIZES.cover.width, SIZES.cover.height)
@@ -100,7 +110,7 @@ function previews(posts) {
   <header><span class="type ${p.type}">${p.type}</span><time>${when} IST</time><code>${p.id}</code>
   ${todos.length ? `<span class="blocked">Blocked: ${todos.length} TODO</span>` : '<span class="ok">Ready</span>'}${p.type === 'reel' ? (video ? '<span class="ok">Video in reels/ready</span>' : '<span class="warn">Film it: no video yet</span>') : ''}</header>
   <div class="strip">${imgs.map((src) => `<img loading="lazy" src="${relative(resolve(ROOT, 'output'), resolve(ROOT, src))}?v=${v}" alt="">`).join('')}</div>
-  ${p.type === 'reel' ? `<p class="hook"><b>Hook:</b> ${esc(p.hook)} · <a href="../reels/${p.id}.md">shot list</a></p>` : ''}
+  ${p.type === 'reel' && p.motion ? `<p class="hook"><b>Animated (${esc(p.motion.style)}):</b> <a href="../reels/ready/${p.id}.mp4">watch the video</a></p>` : ''}${p.type === 'reel' && !p.motion ? `<p class="hook"><b>Hook:</b> ${esc(p.hook)} · <a href="../reels/${p.id}.md">shot list</a></p>` : ''}
   <pre>${esc(fullCaption(p))}</pre>
   ${todos.length ? `<ul class="todos">${todos.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}
 </article>`

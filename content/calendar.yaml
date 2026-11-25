@@ -84,36 +84,21 @@ posts:
 - id: 2026-11-26-carousel-how-it-works
   date: 2026-11-26
   time: "19:30"
-  type: carousel
+  type: reel
   pillar: how-it-works
-  slides:
-    - kind: hook
-      kicker: "New here?"
-      title: "How renting on RentiGoo **works**"
-      sub: "5 steps. No booking fee right now."
-    - kind: step
-      number: 1
-      title: "Find it"
-      text: "Search rentigoo.in by what you need, your area and your dates. Every listing shows the price per day and the refundable deposit."
-    - kind: step
-      number: 2
-      title: "Send a request"
-      text: "Pick your dates and send a request. It costs nothing. You can message the owner first."
-    - kind: step
-      number: 3
-      title: "Owner says yes"
-      text: "The dates are blocked for you. You still haven't paid anything."
-    - kind: step
-      number: 4
-      title: "Pickup or delivery"
-      text: "Collect it, or get it delivered for the owner's delivery fee. Show your ID, photograph the item together, then pay rent and deposit to the owner by UPI or cash."
-    - kind: step
-      number: 5
-      title: "Return it"
-      text: "Photograph it again at return. The owner gives the deposit back within 24 hours, unless damage is reported with photos."
-    - kind: cta
-      title: "Save this for your first rental"
-      lines: ["Save it", "Share with a friend who always borrows your stuff", "Questions? WhatsApp +91 93014 22919", "rentigoo.in"]
+  # Style B, App in hand: animated, rendered by npm run generate (screens are real rentigoo.in screenshots).
+  motion:
+    style: app
+    kicker: "New here?"
+    title: "How renting on RentiGoo works"
+    steps:
+      - { title: "Find it", text: "Search by what you need, your area and your dates.", screen: screens/home.png, tap: [195, 504] }
+      - { title: "Send a request", text: "Pick your dates. Asking costs nothing.", screen: screens/listing-nikon.png, tap: [304, 746] }
+      - { title: "Owner says yes", text: "The dates are blocked for you. Still nothing paid.", icon: calendar }
+      - { title: "Pickup or delivery", text: "Show your ID, photograph the item together, pay the owner by UPI or cash.", icon: handover }
+      - { title: "Return it", text: "Photograph it again. The deposit comes back within 24 hours.", icon: returnit }
+    outro: "Save this for your first rental"
+    outroSub: "Questions? WhatsApp +91 93014 22919"
   caption: |
     How does RentiGoo work? It's simple 👇
 
@@ -155,14 +140,22 @@ posts:
 - id: 2026-11-29-single-item-of-week-nikon
   date: 2026-11-29
   time: "19:00"
-  type: single
+  type: reel
   pillar: local
-  slides:
-    - kind: photo
-      image: listings/nikon-1.webp
-      title: "Item of the week: **Nikon camera**"
-      chips: ["₹500/day", "MP Nagar", "Delivery ₹100", "Deposit ₹750"]
-      text: "From an owner in MP Nagar. Rent it for 1 to 15 days."
+  # Style A, Product hero: animated, rendered by npm run generate (real listing photos).
+  motion:
+    style: hero
+    badge: "Item of the week"
+    title: "Don't buy it."
+    title2: "Rent it for ₹500."
+    price: "₹500"
+    per: "per day"
+    photos: [listings/nikon-1.webp, listings/nikon-2.webp, listings/nikon-3.webp]
+    chips: ["Nikon camera · MP Nagar", "₹750 refundable deposit"]
+    detailTitle: "What you get"
+    facts: ["Rent it for 1 to 15 days", "Pick up in MP Nagar, or delivery for ₹100", "₹750 deposit, back within 24 hours"]
+    outro: "Book it on rentigoo.in"
+    outroSub: "Or WhatsApp us on +91 93014 22919."
   caption: |
     📸 Item of the week: Nikon Camera, MP Nagar
 
@@ -182,18 +175,17 @@ posts:
   time: "19:30"
   type: reel
   pillar: owners
-  hook: "That camera in your cupboard could be paying for itself."
-  shots:
-    - { n: 1, seconds: 2, film: "Open a cupboard door: a camera, speaker or drill on the shelf. Text from frame 1.", on_screen: "Your cupboard is full of money 👀" }
-    - { n: 2, seconds: 3, film: "Pick the item up, blow dust off it (fun, quick).", on_screen: "Used it once. Since then: nothing." }
-    - { n: 3, seconds: 4, film: "Phone: take 2-3 photos of the item by a window (daylight).", on_screen: "List it on RentiGoo: free" }
-    - { n: 4, seconds: 4, film: "Screen recording: rentigoo.in/list, the steps (photos, price, deposit).", on_screen: "You set the price and the deposit" }
-    - { n: 5, seconds: 3, film: "Hand-over moment: give the item to a friend (hands only), they hand back cash/UPI on a phone screen.", on_screen: "No commission right now" }
-  audio: "A trending 'glow-up'/before-after sound: the beat changes on shot 3."
-  cover:
-    kicker: "For owners"
-    title: "Your cupboard is full of **money**"
-    sub: "List what you don't use. Free."
+  # Style C, Scrapbook: animated, rendered by npm run generate (drawn items, no photos needed).
+  motion:
+    style: scrapbook
+    scribble: "used once a year?"
+    title: "Your cupboard is full of money"
+    items: [camera, speaker, drill, tent]
+    notesTitle: "List it on RentiGoo"
+    notes: ["Listing is free", "You set the price and the deposit", "You accept the requests", "No commission right now"]
+    outro: "Send this to the friend whose house has everything"
+    link: "rentigoo.in/list"
+    outroSub: "How much could you earn? See an estimate at rentigoo.in/earn"
   caption: |
     Camera, speaker, drill, tent at home... used once a year? 🤔
 
