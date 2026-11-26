@@ -52,6 +52,8 @@ h1, h2, .big { font-family: 'Nunito', sans-serif; font-weight: 800; letter-spaci
 @keyframes shine { from { transform: translateX(-160%) skewX(-18deg); } to { transform: translateX(320%) skewX(-18deg); } }
 @keyframes doorL { from { transform: perspective(1400px) rotateY(0); } to { transform: perspective(1400px) rotateY(-78deg); } }
 @keyframes doorR { from { transform: perspective(1400px) rotateY(0); } to { transform: perspective(1400px) rotateY(78deg); } }
+@keyframes thump { 0%, 100% { transform: scale(1) rotate(var(--rot, 0deg)); } 30% { transform: scale(1.08) rotate(var(--rot, 0deg)); } }
+@keyframes wave { 0% { opacity: 0; transform: scale(.6); } 30% { opacity: 1; } 100% { opacity: 0; transform: scale(1.35); } }
 @keyframes floatUp { 0% { opacity: 0; transform: translateY(0) scale(.5); } 25% { opacity: 1; transform: translateY(-60px) scale(1); } 100% { opacity: 0; transform: translateY(-300px) scale(1); } }
 .dash { stroke-dasharray: var(--len, 1200); }
 `
@@ -205,21 +207,31 @@ function scrapbook(m) {
   const tick = (start) =>
     `<svg viewBox="0 0 60 60" width="76" height="76" fill="none" stroke-linecap="round" stroke-linejoin="round" style="flex:none" aria-hidden="true"><rect x="4" y="4" width="52" height="52" rx="12" stroke="${BRAND.text}" stroke-width="4"/><path class="dash" d="M15 31l10 10 21-24" stroke="${BRAND.text}" stroke-width="7" style="--len:60;${anim(a('draw', start, 0.45, 'ease-out'))}"/></svg>`
   const notesStart = 6.6
-  const html = page(
-    BRAND.page,
-    `${logoPill()}
-  <div class="scene" style="${anim(exit(6.1))}">
-    <p class="abs hand" style="--rot:-3deg;left:80px;top:300px;font-size:64px;color:${BRAND.muted};${anim(a('rise', 0.1, 0.5))}">${rich(m.scribble ?? '')}</p>
-    <h1 class="abs" style="left:72px;top:380px;width:940px;font-size:124px;${anim(a('rise', 0.3, 0.6))}">${rich(m.title)}</h1>
-    <svg class="abs" viewBox="0 0 400 40" width="420" height="42" style="left:${m.underlineX ?? 560}px;top:${m.underlineY ?? 616}px" fill="none" stroke="${BRAND.yellow}" stroke-width="16" stroke-linecap="round" aria-hidden="true"><path class="dash" d="M6 24 C 100 6, 250 36, 394 14" style="--len:420;${anim(a('draw', 0.9, 0.5, 'ease-out'))}"/></svg>
-    <div class="abs" style="left:250px;top:760px;width:580px;height:680px;${anim(a('rise', 0.6, 0.6))}">
+  // Scene 1 centrepiece: a cupboard full of drawn items (default), or one big drawn item that comes alive (feature: <icon>).
+  const confetti = [[-40, 40, 0], [600, 10, 1], [-10, 470, 2], [620, 430, 1], [280, -60, 0], [140, 600, 2], [460, 590, 0]]
+  const stage = m.feature
+    ? `<div class="abs" style="left:230px;top:770px;width:620px;height:620px;${anim(a('rise', 0.6, 0.6))}">
+      <div style="position:absolute;inset:0;border-radius:50%;background:${BRAND.yellow};border:8px solid ${BRAND.text}"></div>
+      ${[0, 1, 2].map((i) => `<div style="position:absolute;inset:-40px;border-radius:50%;border:8px solid ${BRAND.text};animation:wave 1s ease-out ${1.4 + i * 0.33}s 4 both"></div>`).join('')}
+      <div style="position:absolute;inset:0;display:grid;place-items:center;--rot:-4deg;${anim(a('pop', 1.0, 0.55))}"><div style="--rot:-4deg;animation:thump .5s ease-in-out 1.6s 8 both">${icon(m.feature, 420)}</div></div>
+      ${confetti.map(([x, y, c], i) => `<span style="position:absolute;left:${x}px;top:${y}px;width:${i % 2 ? 26 : 40}px;height:${i % 2 ? 40 : 18}px;border-radius:6px;background:${[BRAND.text, '#FFFFFF', BRAND.yellow][c]};border:4px solid ${BRAND.text};transform:rotate(${i * 37}deg);${anim(a('floatUp', 1.8 + i * 0.35, 1.8, 'ease-out'))}"></span>`).join('')}
+    </div>`
+    : `    <div class="abs" style="left:250px;top:760px;width:580px;height:680px;${anim(a('rise', 0.6, 0.6))}">
       <div style="position:absolute;inset:0;border:8px solid ${BRAND.text};border-radius:24px;background:#fff"></div>
       <div style="position:absolute;left:8px;right:8px;top:330px;border-top:7px solid ${BRAND.text}"></div>
       ${items.map((it, i) => `<div style="position:absolute;left:${slots[i][0]}px;top:${slots[i][1]}px;width:210px;height:210px;display:grid;place-items:center;--rot:${[-6, 5, 4, -5][i]}deg;${anim(a('pop', 1.9 + i * 0.25, 0.5))}">${icon(it, 190)}</div>`).join('')}
       ${items.map((_, i) => `<span class="big" style="position:absolute;left:${slots[i][0] + 120}px;top:${slots[i][1] + 10}px;width:76px;height:76px;border-radius:50%;background:${BRAND.yellow};border:5px solid ${BRAND.text};display:grid;place-items:center;font-size:42px;${anim(a('floatUp', 3.2 + i * 0.3, 1.6, 'ease-out'))}">₹</span>`).join('')}
       <div style="position:absolute;left:0;top:0;width:50%;height:100%;background:${BRAND.yellow};border:8px solid ${BRAND.text};border-radius:24px 0 0 24px;transform-origin:left center;${anim(a('doorL', 1.2, 0.8, 'cubic-bezier(.5,0,.3,1)'))}"><span style="position:absolute;right:26px;top:300px;width:16px;height:80px;border-radius:8px;background:${BRAND.text}"></span></div>
       <div style="position:absolute;right:0;top:0;width:50%;height:100%;background:${BRAND.yellow};border:8px solid ${BRAND.text};border-radius:0 24px 24px 0;transform-origin:right center;${anim(a('doorR', 1.2, 0.8, 'cubic-bezier(.5,0,.3,1)'))}"><span style="position:absolute;left:26px;top:300px;width:16px;height:80px;border-radius:8px;background:${BRAND.text}"></span></div>
-    </div>
+    </div>`
+  const html = page(
+    BRAND.page,
+    `${logoPill()}
+  <div class="scene" style="${anim(exit(6.1))}">
+    <p class="abs hand" style="--rot:-3deg;left:80px;top:300px;font-size:64px;color:${BRAND.muted};${anim(a('rise', 0.1, 0.5))}">${rich(m.scribble ?? '')}</p>
+    <h1 class="abs" style="left:72px;top:380px;width:940px;font-size:${m.titleSize ?? 124}px;${anim(a('rise', 0.3, 0.6))}">${rich(m.title)}</h1>
+    <svg class="abs" viewBox="0 0 400 40" width="420" height="42" style="left:${m.underlineX ?? 560}px;top:${m.underlineY ?? 616}px" fill="none" stroke="${BRAND.yellow}" stroke-width="16" stroke-linecap="round" aria-hidden="true"><path class="dash" d="M6 24 C 100 6, 250 36, 394 14" style="--len:420;${anim(a('draw', 0.9, 0.5, 'ease-out'))}"/></svg>
+    ${stage}
   </div>
 
   <div class="scene" style="${anim(exit(11.6))}">

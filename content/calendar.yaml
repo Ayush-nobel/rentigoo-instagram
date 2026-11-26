@@ -115,18 +115,20 @@ posts:
   time: "20:30"
   type: reel
   pillar: rent-dont-buy
-  hook: "Party this weekend? Rent the speaker, not buy it."
-  shots:
-    - { n: 1, seconds: 2, film: "Your phone showing a WhatsApp party plan (blur names), quick zoom in. Text from frame 1.", on_screen: "Party this weekend?" }
-    - { n: 2, seconds: 3, film: "A shopping app cart with a big speaker (blur the brand), thumb hovering over Buy.", on_screen: "Rent the speaker, not buy it" }
-    - { n: 3, seconds: 3, film: "Thumb moves away. Cut to you shaking your head / closing the app.", on_screen: "1 night of party = 1-2 days of rent" }
-    - { n: 4, seconds: 4, film: "Screen recording: rentigoo.in → Browse → Party & events.", on_screen: "Rent from someone in Bhopal" }
-    - { n: 5, seconds: 3, film: "Lights on in a room, music starts. End on the RentiGoo logo or website.", on_screen: "Not listed? WhatsApp us, we'll try to find one" }
-  audio: "A trending party/beat-drop sound: the drop lands on shot 5 when the lights come on."
-  cover:
-    kicker: "Weekend plans"
-    title: "Rent the **speaker**, not buy it"
-    sub: "Party this weekend? 🎉"
+  # Style C, Scrapbook (single drawn item): animated, rendered by npm run generate. No speaker photo needed.
+  motion:
+    style: scrapbook
+    feature: speaker
+    scribble: "party this weekend?"
+    title: "Rent the speaker,\nnot buy it"
+    titleSize: 108
+    underlineX: 470
+    underlineY: 488
+    notesTitle: "Why rent it?"
+    notes: ["You need it for one night", "Pay only for the days you use it", "Price and deposit shown upfront", "Not listed yet? WhatsApp us, we'll try to find one"]
+    outro: "Share this with the friend who hosts every party"
+    link: "rentigoo.in"
+    outroSub: "WhatsApp us: +91 93014 22919"
   caption: |
     A new speaker for a weekend party? 🔊 Why spend that much on one night?
 
