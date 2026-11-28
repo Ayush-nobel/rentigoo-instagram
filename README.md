@@ -122,6 +122,25 @@ gh variable set PUBLISHING_ENABLED --body "true"
 ```
 From then on, the evening runs publish what's due. To publish one post by hand: **Actions → Publish due posts → Run workflow**, untick "Dry run", and enter its id.
 
+### 9. On-time posting (cron-job.org)
+
+GitHub's own schedule often starts hours late (posts went out at 3-4 am). A free cron-job.org job starts the publisher on time instead. Extra runs are harmless: each publishes only what's due and not yet out.
+
+1. **A token that can only start this workflow.** GitHub → Settings → Developer settings → Fine-grained tokens → Generate new token. Name it `cron-job.org publish`, repository access *Only select repositories* → `rentigoo-instagram`, permissions → **Actions: Read and write** (nothing else), expiry 1 year. Copy it. Never paste it anywhere but cron-job.org.
+2. **The job.** At cron-job.org (free account) → Create cronjob:
+   - URL: `https://api.github.com/repos/Ayush-nobel/rentigoo-instagram/actions/workflows/publish.yml/dispatches`
+   - Schedule: Custom, time zone **Asia/Kolkata**, hours `19,20,21`, minutes `1,31`, every day.
+   - Advanced → Request method **POST**, headers:
+     - `Authorization: Bearer <your token>`
+     - `Accept: application/vnd.github+json`
+     - `X-GitHub-Api-Version: 2022-11-28`
+     - `Content-Type: application/json`
+   - Request body: `{"ref":"main","inputs":{"dry_run":"false"}}`
+   - Notify on failure: on.
+3. **Test it** with *Test run*: the answer should be **204**, and a run appears under Actions. (Nothing is published unless a post is due.)
+
+When the token expires, make a new one and paste it into the job's Authorization header.
+
 ---
 
 ## Day to day

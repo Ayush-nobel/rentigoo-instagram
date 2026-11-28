@@ -1,8 +1,10 @@
 name: Publish due posts
 
-# Posts are scheduled 7-9 pm IST. GitHub cron is in UTC and can start a few
-# minutes late, so this runs every 30 minutes from 7:00 to 9:30 pm IST
-# (13:30-16:00 UTC). Each run publishes only what's due and not yet published.
+# Posts are scheduled 7-9 pm IST. The on-time trigger is cron-job.org, which
+# starts this workflow (workflow_dispatch, dry_run=false) at :01 and :31 past
+# 7, 8 and 9 pm IST; see README "On-time posting". GitHub's own cron below is
+# only a backup: it often starts hours late. Each run publishes only what's
+# due and not yet published, so extra runs are harmless.
 on:
   schedule:
     - cron: "30 13 * * *"   # 7:00 pm IST
@@ -33,6 +35,10 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The latest main, not the commit the run was triggered on: a run that waited
+          # behind another (concurrency group) must see what that one just published.
+          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: 22
